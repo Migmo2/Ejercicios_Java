@@ -16,9 +16,9 @@ public class Main {
         System.out.println("4.Do-While");
         System.out.println("5.Ejercicios Basicos POO");
         System.out.println("6.POO con Conexion a Base De Datos");
-        System.out.println("Ingrese una opcion");
 
         Scanner lector =new Scanner(System.in);
+        System.out.println("Ingrese una opcion:");
         int opcion = lector.nextInt();
 
         switch(opcion){
@@ -48,7 +48,7 @@ public class Main {
                 break;
 
             default:
-                System.out.println("Ingreso una Opcion Invalidad");
+                System.out.println("Ingresaste una opcion invalida, intentalo de nuevo");
         }
 
 

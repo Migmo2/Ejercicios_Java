@@ -159,8 +159,8 @@ public class EjerciciosCondicionales {
         System.out.println("EJERCICIO 8 - Descuento en tienda");
         System.out.println("EJERCICIO 9 - Sistema de login");
         System.out.println("EJERCICIO 10 - Cálculo de IMC");
-        System.out.println("Ingrese un ejercicio");
 
+        System.out.println("Ingrese un ejercicio");
         int Ejercicios = lector.nextInt();
 
         if (Ejercicios==1){
@@ -168,14 +168,64 @@ public class EjerciciosCondicionales {
             System.out.println("Ingrese un numero Para determinar si es Negativo o Positivo");
             int numero= lector.nextInt();
             if (numero>0){
-                System.out.println("Numero es positivo "+numero);
+                System.out.println("Numero es positivo " + numero);
             }else if (numero<0){
-                System.out.println("Numero es Negativo "+numero);
+                System.out.println("Numero es Negativo " + numero);
             }else {
                 System.out.println("Numero Ingresado es Cero "+numero);
             }
+        }
+
+        if(Ejercicios==2 /*condicion*/){
+            //codigo relacionado con la logica
+            //Inicio Desarrollo Ejercicio 2
+            System.out.println("EJERCICIO 2 - Número par o impar. ");
+            System.out.println("Ingrese un numero entero parea determinar si es par o impar: ");
+            int par_impar = lector.nextInt();
+            if (par_impar % 2 == 0){
+                System.out.println("El numero" + par_impar + " es par.");
+            }else{
+                System.out.println("El numero es " + par_impar + " es impar.");
+            }
 
         }
+
+        if(Ejercicios==3 ){
+            //Inicio Desarrollo Ejercicio 3
+            System.out.println("EJERCICIO 3 - Mayor de edad");
+            System.out.println("ingresa tu edad");
+            int edad = lector.nextInt();
+            if (edad>=18){
+                System.out.println("Puede ingresar.");
+            }else if(edad<18){
+
+            }
+
+
+        }
+        if(Ejercicios==4){
+            //Inicio Desarrollo Ejercicio 4
+        }
+        if(Ejercicios==5){
+            //Inicio Desarrollo Ejercicio 5
+        }
+        if(Ejercicios==6){
+            //Inicio Desarrollo Ejercicio 6
+        }
+        if(Ejercicios==7){
+            //Inicio Desarrollo Ejercicio 7
+        }
+        if(Ejercicios==8){
+            //Inicio Desarrollo Ejercicio 8
+        }
+
+        if(Ejercicios==9){
+            //Inicio Desarrollo Ejercicio 9
+        }
+        if(Ejercicios==10){
+            //Inicio Desarrollo Ejercicio 10
+        }
+
 
 
         if (Ejercicios>10 || Ejercicios <=0){
