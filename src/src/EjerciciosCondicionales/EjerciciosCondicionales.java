@@ -41,7 +41,7 @@ Use estructuras condicionales.
 EJERCICIO 4 - Calculadora básica
 ========================================
 Solicite:
-
+hola mundo
 - Dos números
 - Un operador (+, -, *, /)
 
@@ -198,13 +198,17 @@ public class EjerciciosCondicionales {
             if (edad>=18){
                 System.out.println("Puede ingresar.");
             }else if(edad<18){
-
+                System.out.println("Acceso denegado.");
+            }else {
+                System.out.println("Edad invalida.");
             }
-
-
         }
+
         if(Ejercicios==4){
             //Inicio Desarrollo Ejercicio 4
+            System.out.println("EJERCICIO 4 - Calculadora básica");
+
+
         }
         if(Ejercicios==5){
             //Inicio Desarrollo Ejercicio 5
