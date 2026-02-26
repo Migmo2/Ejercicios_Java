@@ -1,4 +1,5 @@
 package EjerciciosCondicionales;
+
 /*
 ========================================
 EJERCICIO 1 - Número positivo, negativo o cero
@@ -24,6 +25,7 @@ Use el operador módulo (%) para resolverlo.
 */
 
 /*
+
 ========================================
 EJERCICIO 3 - Mayor de edad
 ========================================
@@ -41,7 +43,7 @@ Use estructuras condicionales.
 EJERCICIO 4 - Calculadora básica
 ========================================
 Solicite:
-hola mundo
+
 - Dos números
 - Un operador (+, -, *, /)
 
@@ -191,7 +193,7 @@ public class EjerciciosCondicionales {
         }
 
         if(Ejercicios==3 ){
-            //Inicio Desarrollo Ejercicio 3
+            // Inicio Desarrollo Ejercicio 3
             System.out.println("EJERCICIO 3 - Mayor de edad");
             System.out.println("ingresa tu edad");
             int edad = lector.nextInt();
@@ -207,14 +209,95 @@ public class EjerciciosCondicionales {
         if(Ejercicios==4){
             //Inicio Desarrollo Ejercicio 4
             System.out.println("EJERCICIO 4 - Calculadora básica");
+            System.out.println("Ingresa un numero: ");
+            double numero1 = lector.nextDouble();
+            System.out.println("Ingresa un segundo numero: ");
+            double numero2 = lector.nextDouble();
+            System.out.println("Ingrese un operador(+,-,*,/ ): ");
+            String operador = lector.next();
 
-
+            switch (operador){
+                case "+":
+                    System.out.println("Realizando la operación suma.");
+                    double resultado = numero1 + numero2;
+                    System.out.println("La suma es " + resultado);
+                    break;
+                case "-":
+                    System.out.println("Realizando la operación de la resta.");
+                    double resultado2 = numero1 - numero2;
+                    System.out.println("La resta es " + resultado2);
+                    break;
+                case  "*":
+                    System.out.println("Realizando la operación de multiplicación.");
+                    double resultado3 = numero1 * numero2;
+                    System.out.println("El resultado de la multiplicación: " + resultado3);
+                    break;
+                case  "/":
+                    System.out.println("Verificando para realizar la operación de división.");
+                    if (numero2 == 0){
+                        System.out.println("No se puede dividir entre cero, ingresa un numero diferente.");
+                        EjerciciosCondicionales ejerciciosCondicionales = new EjerciciosCondicionales();
+                    }else {
+                        double resultado_division =  numero1 / numero2;
+                        System.out.println("La division es " + resultado_division);
+                    }
+                    break;
+                default:
+                    System.out.println("No se puede reconocer el operador, intentalo nuevamente.");
+            }
         }
         if(Ejercicios==5){
             //Inicio Desarrollo Ejercicio 5
+            System.out.println("EJERCICIO 5 - Año bisiesto");
+            System.out.println("ingresa un año para determinar si es bisiesto o no: ");
+            int año = lector.nextInt();
+            boolean es_bisiesto;
+            if (año % 4 == 0){
+                es_bisiesto = true;
+            }else if(año % 100 == 0){
+                es_bisiesto = false;
+            }else if (año % 400 == 0) {
+                es_bisiesto = true;
+            }else {
+                es_bisiesto = false;
+            }
+
+            if(es_bisiesto){
+                System.out.println("El año " + es_bisiesto + " si es bisiesto.");
+            }else {
+                System.out.println("El año que ingresaste " + es_bisiesto + " no es bisiesto.");
+            }
         }
         if(Ejercicios==6){
             //Inicio Desarrollo Ejercicio 6
+            /*
+            ========================================
+            EJERCICIO 6 - Clasificación de nota
+            ========================================
+            Pida una nota entre 0 y 100 y clasifíquela así:
+
+            90 – 100 → Excelente
+            80 – 89  → Bueno
+            70 – 79  → Aceptable
+            60 – 69  → Insuficiente
+            Menor a 60 → Reprobado
+
+            Valide que la nota esté en el rango correcto.
+            */
+            System.out.println("EJERCICIO 6 - Clasificación de nota");
+            System.out.println("Señor usuario ingrese una nota entre 0 y 100: ");
+            int nota = lector.nextInt();
+            if(nota > 90 && nota < 100){
+                System.out.println("Tu calificación es Excelente: " + nota);
+            }else if(nota > 80 && nota < 89){
+                System.out.println("Tu calificación es Bueno: " + nota);
+            }else if(nota > 70 && nota < 79){
+                System.out.println("Tu calificación es Aceptable: " + nota);
+            }else if(nota > 60 && nota < 69){
+                System.out.println("TU calificaión es Insuficiente: " + nota);
+            }else if(nota )
+
+
         }
         if(Ejercicios==7){
             //Inicio Desarrollo Ejercicio 7
@@ -238,4 +321,5 @@ public class EjerciciosCondicionales {
         }
     }
 }
+
 
